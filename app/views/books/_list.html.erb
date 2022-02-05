@@ -14,6 +14,10 @@
 </table>
 
 <h2>New Book</h2>
-<label>Title</label>
-
-<label>Opinion</label>
+<%= form_with model: Book.new, local:true do |f| %>
+  <label>Title</label>
+  <%= f.text_field :title %>
+  <label>Opinion</label>
+  <%= f.text_area :body %>
+  <%= f.submit 'Create Book' %>
+<% end %>
