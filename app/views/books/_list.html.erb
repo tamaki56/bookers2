@@ -1,12 +1,19 @@
-<% @books.each do |book| %>
-<div>
-  <%= link_to edit_user_path(book.id) do %>
-    <%= image_tag post_image.get_image %>
-  <% end %>
-  <p>投稿ユーザー画像：<%= image_tag post_image.user.get_profile_image("100x100") %></p>
-  <p>ショップ名：<%= post_image.shop_name %></p>
-  <p>説明：<%= post_image.caption %></p>
-  <p>ユーザーネーム：<%= post_image.user.name %></p>
-  <p><%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %></p>
-</div>
-<% end %>
+<h2>User info</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <th>name</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <th></th>
+    </tr>
+  </tbody>
+</table>
+
+<h2>New Book</h2>
+<label>Title</label>
+
+<label>Opinion</label>
