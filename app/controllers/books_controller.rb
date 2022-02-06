@@ -14,7 +14,7 @@ class BooksController < ApplicationController
     @book.user_id = current_user.id
     @books= Book.all
     @book.save
-    redirect_to book_path(@book.id)
+    redirect_to edit_book_path(@book.id)
   end
   
   def edit
