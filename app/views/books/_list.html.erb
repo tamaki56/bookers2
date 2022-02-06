@@ -13,6 +13,8 @@
   </tbody>
 </table>
 
+<%= link_to "user_edit", edit_user_path(user.id) %>
+
 <h2>New Book</h2>
 <%= form_with model: Book.new, local:true do |f| %>
   <label>Title</label>

@@ -9,7 +9,9 @@
 <table>
     <tbody>
         <tr>
-            <td></td>
+            <td><%= image_tag @user.get_profile_image("40x40") %><br><%= @user.name %></td>
+            <td><%= @book.title %></td>
+            <td><%= @book.body %></td>
             <td></td>
             <td></td>
         </tr>
