@@ -1,7 +1,7 @@
 <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p>
 
-<%= render 'books/list', books: @books %>
+<%= render 'books/list', books: @books,user: @user %>
 
 <h2>Books</h2>
 
@@ -16,7 +16,7 @@
     
     <tbody>
         <tr>
-            <td></td>
+            <td><br><%= @user.name %></td>
             <td></td>
             <td></td>
         </tr>
