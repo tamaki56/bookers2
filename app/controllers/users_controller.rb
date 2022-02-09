@@ -27,7 +27,6 @@ class UsersController < ApplicationController
     if @user != current_user
       redirect_to user_path(current_user.id)
     end 
-    
   end
   
   private
