@@ -1,8 +1,4 @@
-<% if flash[:notice] %>
-    <div class="flash">
-         <%= flash[:notice] %>
-    </div>
-<% end %>
+
 
 <% if book.errors.any? %>
   <%= book.errors.count %>errors prohibited this book from being saved:
