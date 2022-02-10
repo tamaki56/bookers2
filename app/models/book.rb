@@ -1,7 +1,7 @@
 class Book < ApplicationRecord
   
-  validates :title, presence: true
-  validates :body, presence: true, length: { maximum: 200 }
+  validates :title, presence: true #空でないように設定
+  validates :body, presence: true, length: { maximum: 200 } #空でない、かつ最大200文字までに設定
   
  
   

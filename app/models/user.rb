@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  validates :introduction, presence: false, length: { maximum: 50 }
-  validates :name, presence: true, length: { in: 2..20  }
+  validates :introduction, presence: false, length: { maximum: 50 } #最大50文字までに設定
+  validates :name, presence: true, uniqueness: { case_sensitive: false },length: { in: 2..20  } #一意性を持たせ、かつ2～20文字の範囲で設定
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
